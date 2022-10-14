@@ -38,10 +38,10 @@ h1 {
     margin-bottom: 3vw;
 }
 p {
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: bold;
     line-height: 20px;
-    letter-spacing: 0.004vwx;
+    letter-spacing: 0.5px;
     margin: 20px 0 30px;
 }
 
@@ -290,4 +290,212 @@ button.ghost {
 .container.right-panel-active .overlay-right {
     transform: translateX(20%);
     display: none;
+}
+@media (max-width: 400px){
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: #f6f5f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+        margin: -2vw 0 -11vw;
+        background-image: url(redfort.jpg);
+        background-size: cover;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    p {
+        font-size: 1.5vw;
+        font-weight: bold;
+        line-height: 1.8vw;
+        letter-spacing: 0vw;
+        margin: 1.3vw 0 2.4vw;
+    }
+    span {
+        font-size: 1vw;
+        color: beige;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    .container {
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        position: absolute;
+        overflow: scroll;
+        width: 70vw;
+        max-width: 100%;
+        min-height: 140vw;
+        margin-top: 7vw;
+        opacity: 0.8;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .container::-webkit-scrollbar{
+        display: none;
+    }
+    a {
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 15px 0;
+    }
+    .form-container form {
+        background: rgba(45, 52, 54, 1.0);
+        display: flex;
+        flex-direction: column;
+        padding: 0 5vw;
+        min-height: 35vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    select{
+        border-radius: 3vw;
+        border: 1px solid #ff4b2b;
+        min-width: 7vw;
+        background: #ff4b2b;
+        color: #fff;
+        font-size: 1.5vh;
+        font-weight: bold;
+        padding: 0.75vw 6vw;
+        margin-top: 1.33vw;
+        letter-spacing: 0.05vw; 
+    }
+    button {
+        border-radius: 3vw;
+        width: 25vw;
+        border: 1px solid #ff4b2b;
+        background: #ff4b2b;
+        color: #fff;
+        font-size: 3vw;
+        font-weight: bold;
+        padding: 1vw 3vw;
+        margin-top: 10vw;
+        margin-bottom: 8vw;
+        letter-spacing: 0.1vw;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+    }
+    
+    input[type=text] {
+        width: 45vw;
+        text-align: center;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-family: 'PLay', sans-serif;
+        font-size: 2vh;
+        font-weight: 200px;
+        padding: 10px 0;
+        transition: border 0.5s;
+        outline: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    input[type=password] {
+        width: 45vw;
+        text-align: center;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-family: 'PLay', sans-serif;
+        font-size: 2vh;
+        font-weight: bold;
+        padding: 10px 0;
+        transition: border 0.5s;
+        outline: none;
+        color: #fff;
+    }
+    
+    input[type=email] {
+        width: 45vw;
+        text-align: center;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-family: 'PLay', sans-serif;
+        font-size: 2vh;
+        font-weight: 200px;
+        padding: 10px 0;
+        transition: border 0.5s;
+        outline: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    button:active {
+        transform: scale(0.95);
+    }
+    
+    button:focus {
+        outline: none;
+    }
+    
+    button.ghost {
+        background: transparent;
+        border-color: #ff4b2b;
+        background-color: #ff4b2b
+    }
+    #signupform{
+        margin-top: 10vw;
+        z-index: 0;
+        overflow: auto;
+        height: 87vw;
+    
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .sign-up-container::-webkit-scrollbar{
+        display: none;
+    }
+    .sign-up-container::-webkit-scrollbar{
+        display: none;
+    }
+    #createaccount{
+        margin-top: 44vh;
+    }
+    #signinform{
+        margin-top: -73vw;
+        height: 46vh;
+        visibility: hidden;
+    }
+    #welcome{
+        margin-top: -10vh;
+    }
+    .overlay-left{
+        margin-top: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overlay-right{
+        margin-top: -22vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+    }
+    .container.right-panel-active.sign-up-container{
+        visibility: visible;
+    }
+    .container.right-panel-active.sign-in-container{
+        visibility: hidden;
+    }
+    .container.right-panel-active.overlay-left{
+        visibility: visible;
+    }
+    .container.right-panel-active.overlay-right{
+        visibility: hidden;
+    }
 }
