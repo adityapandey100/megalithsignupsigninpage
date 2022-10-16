@@ -5,33 +5,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="sie-edge" />
-    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+ 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Slider Form</title>
 </head>
 
 <body>
+	<header class="header">
+		<div class="left-header">
+			<a href="coming_soon.html" class="logo"><img src="megalogotheme.png">
+			Megalith<span>'23</span></a>
+		</div>
+		<nav class="navbar">
+			<a href="#home">home</a>
+			<a href="#about">Internship Brochure</a>
+			<a href="coming_soon.html">Go to Megalith 2023</a>
+		</nav>
+
+		<div class="icons">
+			<div id="menu-btn" class="fas fa-bars"></div>
+			<div id="login-btn" class="fas fa-user"></div>
+		</div>
+
+		<!-- For Login Form -->
+		<!-- <form action="" class="login-form">
+	      <h3>login form</h3>
+	      <input type="email" placeholder="enter your email" class="box">
+	      <input type="password" placeholder="enter your password" class="box">
+	      <div class="flex">
+	         <input type="checkbox" name="" id="remember-me">
+	         <label for="remember-me">remember me</label>
+	         <a href="#">forgot password?</a>
+	      </div>
+	      <input type="submit" value="login now" class="btn">
+	      <p>don't have an account <a href="#">create one!</a></p>
+	   </form> -->
+
+	</header>
+
+    <!-- ==================================================================================== -->
+
 
     <div class="container" id="container">
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome</h1>
+                    <p>Already have an account !</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello,Friend</h1>
+                    <p>Enter your details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div><br><br>
         <div class="form-container sign-up-container">
-            <form action="#"id="signupform">
-                <h1 id="createaccount">Create Account</h1>
+            <form action="#" class="signupform">
+                <h1 class="createaccount">Create Account</h1>
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <input type="text" name="mobileNumber" class="input" placeholder="Mobile Number">
 				<input type="text" name="college" class="input" placeholder="College ">
-				<select name="country" class="countries form-control input" id="countryId">
+				<select name="countrylist" class="countries form-control input" id="countrylist">
 				    <option value="" selected>Select Country</option>
-				    <option value="India">India</option>
 				</select>
-				<select name="state" class="states form-control input" id="stateId">
+				<select name="statelist" class="states form-control input" id="statelist" disabled>
 				    <option value="" selected>Select State</option>
-				    <option value ="Uttar Pradesh" >Uttar Pradesh</option>
 				</select>
-				<select name="city" class="cities form-control input" id="cityId">
+				<select name="citylist" class="cities form-control input" id="citylist" disabled>
 				    <option value="" selected>Select City</option>
-				    <option value="Lucknow" >Lucknow</option>
 				</select>
 				<select name="gender" class="input" placeholder="Select your Gender">
 				    <option value="none" selected>Gender</option>
@@ -45,31 +94,49 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#" id="signinform">
-                <h1 id="signinoption">Sign In</h1>
+            <form action="#" class="signinform">
+                <h1 class="signinoption">Sign In</h1>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <button>Sign In</button>
             </form>
         </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back</h1>
-                    <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Hello,Friend</h1>
-                    <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+       
+    </div>
+ 
+
+<!-- ============================================================================================ -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-col footer-col-desc">
+                <h4 class="footer-logo">Megalith 2023</h4>
+                   <div class="footer-info-megalith">
+                 <img src="megalogotheme.png">
+                      <p>Department of Civil Engineering <br> IIT Kharagpur <br> West Bengal-721302</p>
+              </div>
+            </div>
+            <div class="footer-col footer-col-links">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/megalithkgp"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/megalithkgp"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/iitkgp.megalith/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/megalith-iit-kharagpur/mycompany/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/company/megalith-iit-kharagpur/mycompany/"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
+            
         </div>
     </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <script src="main.js"></script>
-    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 </body>
 
 </html>
